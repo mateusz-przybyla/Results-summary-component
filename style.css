@@ -191,6 +191,10 @@ span {
   margin-top: 1rem;
 }
 
+.btn-continue:hover {
+  background-color: hsl(248, 82%, 58%);
+}
+
 .btn-continue p {
   color: hsl(0, 0%, 100%);
   font-size: 18px;
