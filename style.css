@@ -29,8 +29,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 350px;
+  min-width: 250px;
   height: 100vh;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -56,12 +57,12 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
 }
 
 .result-box h1 {
-  margin: 1.5rem 0 0 0;
+  margin-top: 1.5rem;
 }
 
 .result-box h2 {
@@ -72,9 +73,8 @@ p {
 .text {
   color: hsl(254, 31%, 81%);
   text-align: center;
-  width: 68%;
+  width: 80%;
   margin: 0.5rem 0 2rem 0;
-  font-size: 15px;
 }
 
 .circle {
@@ -101,7 +101,7 @@ p {
 /*SUMMARY BOX*/
 
 .summary-box {
-  background-color: blueviolet;
+  background-color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,14 +110,36 @@ p {
   width: 100%;
 }
 
+.title {
+  width: 80%;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
 .box {
-  height: 50px;
-  width: 90%;
-  background-color: chartreuse;
+  height: 60px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
 }
 
 .left {
@@ -155,13 +177,23 @@ p {
 }
 
 span {
-  color: red;
+  color: hsl(254, 47%, 73%);
 }
 
 /*BUTTONS*/
 
+.btn-continue {
+  background-color: hsl(224, 30%, 27%);
+  height: 60px;
+  width: 80%;
+  border: 0;
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+
 .btn-continue p {
-  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -182,28 +214,49 @@ span {
     height: 100vh;
   }
 
-  .component {
-    flex-direction: row;
-    max-width: 610px;
-    height: 450px;
+  h1 {
+    font-size: 30px;
   }
 
-  .result-box {
-    height: 100%;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+  h2 {
+    font-size: 24px;
+  }
+
+  .component {
+    flex-direction: row;
+    max-width: 750px;
+    height: 525px;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 50px -20px hsla(244, 80%, 47%, 0.42);
   }
 
   .result-box {
     flex: 1;
+    height: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+  }
+
+  .result-box h2 {
+    margin-bottom: 2rem;
   }
 
   .summary-box {
     flex: 1;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+  }
+
+  .text {
+    width: 70%;
   }
 
   .circle {
-    height: 170px;
-    width: 170px;
+    height: 200px;
+    width: 200px;
+  }
+
+  #number {
+    font-size: 70px;
   }
 }
