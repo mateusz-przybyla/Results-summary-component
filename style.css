@@ -1,5 +1,17 @@
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+/*GENERAL STYLES*/
+
 html {
-  font-size: 16px;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 body {
   background-color: grey;
@@ -7,20 +19,36 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "HankenGrotesk";
 }
-* {
-  margin: 0;
-  padding: 0;
-}
+
 .component {
   background-color: aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 25rem;
+  max-width: 375px;
   height: 100vh;
 }
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 500;
+}
+
+/*RESULT BOX*/
+
 .result-box {
   background-color: blue;
   display: flex;
@@ -29,15 +57,7 @@ body {
   justify-content: center;
   height: 100%;
 }
-.summary-box {
-  background-color: blueviolet;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
+
 .circle {
   background-color: brown;
   height: 100px;
@@ -48,6 +68,29 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.circle p {
+  color: hsla(256, 72%, 46%, 1);
+}
+
+#number {
+  color: hsl(0, 0%, 100%);
+  font-size: 60px;
+  font-weight: 800;
+}
+
+/*SUMMARY BOX*/
+
+.summary-box {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
 .box {
   height: 50px;
   width: 90%;
@@ -57,14 +100,54 @@ body {
   align-items: center;
   margin: 0.5rem;
 }
+
 .left {
   display: flex;
   margin-left: 1rem;
 }
+
+.reaction .left p {
+  color: hsl(0, 100%, 67%);
+  font-weight: 700;
+}
+
+.memory .left p {
+  color: hsl(39, 100%, 56%);
+  font-weight: 700;
+}
+
+.verbal .left p {
+  color: hsl(166, 100%, 37%);
+  font-weight: 700;
+}
+
+.visual .left p {
+  color: hsl(234, 85%, 45%);
+  font-weight: 700;
+}
+
 .right {
   display: flex;
   margin-right: 1rem;
 }
+
+.right p {
+  font-weight: 700;
+}
+
+span {
+  color: red;
+}
+
+/*BUTTONS*/
+
+.btn-continue p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/*FOOTER*/
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -73,18 +156,23 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+/* MEDIA QUERIES */
+
 @media (min-width: 450px) {
   body {
     height: 100vh;
   }
+
   .component {
     flex-direction: row;
-    max-width: 50rem;
+    max-width: 750px;
     height: fit-content;
   }
+
   .result-box {
     flex: 1;
   }
+
   .summary-box {
     flex: 1;
   }
