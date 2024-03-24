@@ -30,7 +30,7 @@ body {
   align-items: center;
   justify-content: center;
   min-width: 250px;
-  height: 100vh;
+  min-height: 100vh;
   margin-bottom: 0.5rem;
 }
 
