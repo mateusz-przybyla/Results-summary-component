@@ -21,6 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "HankenGrotesk";
+  min-height: 100vh;
 }
 
 .component {
@@ -30,7 +31,6 @@ body {
   align-items: center;
   justify-content: center;
   min-width: 250px;
-  min-height: 100vh;
   margin-bottom: 0.5rem;
 }
 
@@ -215,7 +215,7 @@ span {
 
 @media (min-width: 500px) {
   body {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   h1 {
